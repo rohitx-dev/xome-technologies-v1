@@ -15,7 +15,10 @@ Next.js, React, TypeScript, Tailwind CSS, PostgreSQL, Prisma, and Better Auth.
 
 ## Current status
 
-Planning and repository setup. Application implementation has not started.
+M0 — Planning and setup.
+
+The initial Next.js application is being set up.
+Public pages and client management features are not implemented yet.
 
 ## Documentation
 
@@ -28,4 +31,39 @@ Planning and repository setup. Application implementation has not started.
 
 ## Development
 
-Installation and run instructions will be added when the application is created.
+Use Node.js 24.x and npm 11.6.2.
+
+Install the locked dependencies:
+
+```powershell
+npm ci
+```
+
+Start the development server:
+
+```powershell
+npm run dev
+```
+
+Open http://localhost:3000.
+
+Check code with ESLint:
+
+```powershell
+npm run lint
+```
+
+Create a production build:
+
+```powershell
+npm run build
+```
+
+Run the production build:
+
+```powershell
+npm run start
+```
+
+The dedicated typecheck script and GitHub Actions workflow will be
+added in the next M0 quality-check task.
