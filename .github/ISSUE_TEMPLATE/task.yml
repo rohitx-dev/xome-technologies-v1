@@ -1,0 +1,40 @@
+name: Task
+description: Plan one piece of project work
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should work when this task is finished, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: read_first
+    attributes:
+      label: Read first
+      description: Document filenames and sections needed for this task.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Depends on
+      description: Link prerequisite issues, or write None.
+    validations:
+      required: true
+  - type: textarea
+    id: work
+    attributes:
+      label: Work checklist
+      description: List the changes using Markdown checkboxes.
+      placeholder: "- [ ] Implement the required behaviour"
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Completion checks
+      description: How will we prove the task works?
+      placeholder: "- [ ] Verify the expected result"
+    validations:
+      required: true

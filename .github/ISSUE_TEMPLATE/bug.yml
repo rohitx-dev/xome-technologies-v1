@@ -1,0 +1,31 @@
+name: Bug report
+description: Report behaviour that does not match the requirements
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What went wrong, and who is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Write the steps another person can follow.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected and actual result
+      description: Explain both results and link the relevant requirement.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and evidence
+      description: Browser, screen size, commit or page, and screenshots when helpful. Remove private information.
+    validations:
+      required: true
