@@ -327,28 +327,48 @@ blank_issues_enabled: true
 
 ```markdown
 ## Why
-Explain the problem or requirement.
+
+Describe the problem or requirement and why this change is needed.
 
 ## Changes
-- Describe the changes made.
+
+- Describe the main behaviour or implementation changes.
 
 ## Related issue
-Use Closes #NUMBER only when this PR completes the issue.
-Otherwise use Related to #NUMBER. Replace NUMBER with the actual issue number.
+
+Closes #REPLACE_WITH_ACTUAL_ISSUE_NUMBER
+
+<!-- Use "Related to #..." instead if this PR does not complete the issue. -->
 
 ## Verification
-- Record commands or manual checks actually run and their results.
-- State checks not run and why.
-- Add sanitised desktop/mobile screenshots for visible changes where useful.
 
-## Configuration or database changes
-Describe required environment variables or migrations, or write None.
+List checks actually run and their results. Mark checks not run as such with a reason.
 
-## Self-review
-- [ ] I compared the changes with the issue's scope.
-- [ ] I reviewed the diff for secrets and unrelated changes.
-- [ ] I updated documentation affected by the change.
-- [ ] I recorded the actual verification results above.
+| Check | Result / evidence |
+| --- | --- |
+| Lint | |
+| Type checking | |
+| Build | |
+| Relevant tests | |
+| Manual behaviour / layout checks | |
+
+## Screenshots
+
+For visible UI changes, include useful desktop/mobile screenshots. Otherwise write N/A.
+
+## Risks and follow-up
+
+Mention known limitations, configuration changes, deployment steps, or remaining work. Write None if appropriate. Never paste secret values.
+
+## Review checklist
+
+- [ ] The diff matches the linked issue's scope.
+- [ ] The relevant acceptance criteria are met, or remaining work is explicitly linked.
+- [ ] Checks above report actual results rather than assumed passes.
+- [ ] Documentation and safe configuration examples reflect relevant changes.
+- [ ] No credentials, personal enquiry contents, or unintended files are included.
+- [ ] UI accessibility and responsive behaviour were checked where applicable; otherwise marked N/A above.
+
 ```
 
 For the setup PR, paste the PR template manually if it is not offered yet. Templates
