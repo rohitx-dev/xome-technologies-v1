@@ -67,3 +67,12 @@ npm run start
 
 The dedicated typecheck script and GitHub Actions workflow will be
 added in the next M0 quality-check task.
+
+## Setup Version
+node version = v24.21.0
+npm version = 11.6.2
+├── next@16.3.8
+├── react-dom@19.2.8
+├── react@19.2.8
+├── tailwindcss@4.3.3
+└── typescript@5.9.3
