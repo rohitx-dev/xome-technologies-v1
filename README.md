@@ -17,7 +17,8 @@ Next.js, React, TypeScript, Tailwind CSS, PostgreSQL, Prisma, and Better Auth.
 
 M0 — Planning and setup.
 
-The initial Next.js application is being set up.
+The initial Next.js application is ready.
+Automated quality checks are being added.
 Public pages and client management features are not implemented yet.
 
 ## Documentation
@@ -65,8 +66,22 @@ Run the production build:
 npm run start
 ```
 
-The dedicated typecheck script and GitHub Actions workflow will be
-added in the next M0 quality-check task.
+## Quality checks
+
+Run these commands before opening a pull request:
+
+```powershell
+npm run lint
+npm run typecheck
+npm run build
+```
+
+- Lint checks code quality.
+- Typecheck generates Next.js route types and checks TypeScript.
+- Build verifies that the production application builds.
+
+GitHub Actions runs the same checks for pull requests targeting main
+and pushes to main. See .github/workflows/ci.yml.
 
 ## Setup Version
 node version = v24.21.0
