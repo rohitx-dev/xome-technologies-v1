@@ -1,25 +1,45 @@
-export default function HomePage() {
+import Link from "next/link";
+
+export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center px-6 py-16">
-      <section className="w-full max-w-2xl rounded-2xl border border-slate-200 bg-white p-8 shadow-sm sm:p-12">
-        <p className="text-sm font-semibold text-blue-700">
-          Xome Technologies
-        </p>
-
-        <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-          Our application foundation is ready.
-        </h1>
-
-        <p className="mt-6 text-base leading-7 text-slate-600">
-          We are building a company website and client management
-          application. This page confirms that the initial Next.js
-          setup is working.
-        </p>
-
-        <p className="mt-8 text-sm text-slate-500">
-          M0 — Planning and setup
-        </p>
+    <>
+      <section className="hero">
+        <div className="container hero-grid">
+          <div className="hero-copy">
+            <p className="eyebrow"><span className="live-dot" /> YOUR BUSINESS. MORE POSSIBILITIES.</p>
+            <h1>Make your next<br /><span>digital move.</span></h1>
+            <p>From your first website to your next growth campaign. We bring design, technology, and marketing together to move your business forward.</p>
+            <div className="button-row">
+              <Link href="/contact" className="button">Build with Xome <span aria-hidden="true">↗</span></Link>
+              <Link href="/services" className="button outline">Explore our services <span aria-hidden="true">→</span></Link>
+            </div>
+            <div className="hero-footnote">
+              <span className="tiny-line" /> For local businesses. For ambitious startups.
+            </div>
+          </div>
+          <div className="hero-art" aria-hidden="true">
+            <div className="art-grid" />
+            <div className="orbit orbit-one" />
+            <div className="orbit orbit-two" />
+            <div className="art-core"><span>×</span></div>
+            <div className="art-label label-one"><span className="label-symbol">⌘</span> Built for your business</div>
+            <div className="art-label label-two"><span className="label-symbol">↗</span> Ready for what’s next</div>
+            <span className="art-coordinate">DESIGN · TECHNOLOGY · GROWTH</span>
+          </div>
+        </div>
       </section>
-    </main>
-  );
+
+      <div className="capability-strip">
+        <div className="container">
+          <span>DESIGNED TO CONNECT</span>
+          <span>Web experiences</span><i />
+          <span>Brand identities</span><i />
+          <span>Digital growth</span><i />
+          <span>Ongoing support</span>
+        </div>
+      </div>
+
+      
+    </>
+    );
 }
